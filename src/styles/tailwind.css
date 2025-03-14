@@ -1,11 +1,11 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-@plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
-
 
 @theme {
   /* Her tilføjes theme variable // tokens */
+  --font-sans: "Helvetica", sans-serif;
+  --font-display: "Bebas Neue", sans-serif;
 }
 
 @layer base {
@@ -18,11 +18,11 @@
   }
 
   /*Tobii mods*/
-    .tobii-zoom{
-      width: 100%;
+  .tobii-zoom {
+    width: 100%;
   }
   .tobii__slide figure > img {
-      padding-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   /* iframe {
@@ -31,13 +31,11 @@
   } */
 
   .tobii {
-      background-color: black;
+    background-color: black;
   }
 }
 
-@layer components{
-
+@layer components {
 }
-@layer utilities{
-  
+@layer utilities {
 }
